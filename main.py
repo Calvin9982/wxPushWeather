@@ -54,8 +54,7 @@ realtime_json = json.loads(requests.get(url, params, headers=headers).text)
 # 实时天气状况
 realtime = realtime_json["now"]
 # 当前温度 拼接 当前天气
-now_temperature = realtime["temp"] + "℃" + realtime["text"]
-
+now_temperature = realtime["temp"] + "摄氏度" 
 # 根据城市地理位置获取3天天气状况
 url = "https://nn7fbyt8tb.re.qweatherapi.com/v7/weather/3d"
 day_forecast_json = json.loads(requests.get(url, params, headers=headers).text)
