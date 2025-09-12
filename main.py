@@ -57,7 +57,7 @@ realtime = realtime_json["now"]
 now_temperature = realtime["temp"] + "℃" + realtime["text"]
 
 # 根据城市地理位置获取3天天气状况
-url = "https://devapi.qweather.com/v7/weather/3d"
+url = "https://nn7fbyt8tb.re.qweatherapi.com/v7/weather/3d"
 day_forecast_json = json.loads(requests.get(url, params, headers=headers).text)
 
 # -----------------------今天天气状况-----------------------------
