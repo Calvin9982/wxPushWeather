@@ -43,13 +43,13 @@ params = {
 }
 
 # 根据城市名查找地理位置
-url = "https://geoapi.qweather.com/v2/city/lookup"
+url = "https://nn7fbyt8tb.re.qweatherapi.com/geo/v2/city/lookup"
 resp_json = json.loads(requests.get(url, params, headers=headers).text)
 city_id = resp_json["location"][0]["id"]
 params["location"] = city_id
 
 # 根据城市地理位置获取当前实时天气
-url = "https://devapi.qweather.com/v7/weather/now"
+url = "https://nn7fbyt8tb.re.qweatherapi.com/v7/weather/now"
 realtime_json = json.loads(requests.get(url, params, headers=headers).text)
 # 实时天气状况
 realtime = realtime_json["now"]
