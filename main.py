@@ -70,9 +70,9 @@ day_forecast_today_sunset = day_forecast_today["sunset"]
 # 天气
 day_forecast_today_weather = day_forecast_today["textDay"]
 # 最低温度
-day_forecast_today_temperature_min = day_forecast_today["tempMin"]+"℃"
+day_forecast_today_temperature_min = day_forecast_today["tempMin"]+"摄氏度"
 # 最高温度
-day_forecast_today_temperature_max = day_forecast_today["tempMax"]+"℃"
+day_forecast_today_temperature_max = day_forecast_today["tempMax"]+"摄氏度"
 # 夜间天气
 day_forecast_today_night = day_forecast_today["textNight"]
 # 白天风向
@@ -94,9 +94,9 @@ day_forecast_tomorrow_sunrise = day_forecast_tomorrow["sunrise"]
 # 日落时间
 day_forecast_tomorrow_sunset = day_forecast_tomorrow["sunset"]
 # 最低温度
-day_forecast_tomorrow_temperature_min = day_forecast_tomorrow["tempMin"] + "℃"
+day_forecast_tomorrow_temperature_min = day_forecast_tomorrow["tempMin"] + "摄氏度"
 # 最高温度
-day_forecast_tomorrow_temperature_max = day_forecast_tomorrow["tempMax"] + "℃"
+day_forecast_tomorrow_temperature_max = day_forecast_tomorrow["tempMax"] + "摄氏度"
 # 夜间天气
 day_forecast_tomorrow_night = day_forecast_today["textNight"]
 # 白天风向
@@ -114,9 +114,9 @@ day_forecast_T2 = day_forecast_json["daily"][2]
 # 天气
 day_forecast_T2_textDay = day_forecast_T2["textDay"]
 # 最低温度
-day_forecast_T2_temperature_min = day_forecast_T2["tempMin"] + "℃"
+day_forecast_T2_temperature_min = day_forecast_T2["tempMin"] + "摄氏度"
 # 最高温度
-day_forecast_T2_temperature_max = day_forecast_T2["tempMax"] + "℃"
+day_forecast_T2_temperature_max = day_forecast_T2["tempMax"] + "摄氏度"
 # -----------------------后天天气状况-----------------------------
 
 
