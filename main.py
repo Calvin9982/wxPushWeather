@@ -150,6 +150,10 @@ def get_count():
     delta = today - datetime.strptime(start_date, "%Y-%m-%d")
     return delta.days+1
 
+def getJoke():
+    response = requests.get('https://60api.09cdn.xyz/v2/dad-joke')
+    data = json.loads(response.text)
+    return data["data"]["content"]
 
 # 生日计算
 def get_birthday():
@@ -202,6 +206,7 @@ if __name__ == '__main__':
     data = {"name": {"value": name},
             "today": {"value": today_date},
             "city": {"value": city},
+             "joke": {"value": getJoke()},
             "weather": {"value": globals()[f'day_forecast_{strDay}_weather']},
             "now_temperature": {"value": now_temperature},
             "min_temperature": {"value": globals()[f'day_forecast_{strDay}_temperature_min']},
